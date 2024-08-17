@@ -1,0 +1,10 @@
+<h1>Task List</h1>
+<ul>
+  {% for task in object_list %}
+  <li>
+    {{ task.title }} - {{ task.description }} - {% if task.completed %}
+    Completed {% else %} Not Completed {% endif %}
+
+  </li>
+  {% endfor %}
+</ul>
